@@ -143,5 +143,15 @@ means
 # 3.3
 m <- c(mean(df$a), mean(df$b), mean(df$c), mean(df$d), mean(df$e))
 m
+
+# 3. diamonds data set
 library(tidyverse)
 head(diamonds, 10)
+
+names(diamonds)
+View(diamonds)
+ro <- diamonds[which(diamonds$cut == "Ideal"),]
+ro
+ro2 <- filter(diamonds, cut == "Ideal")
+ro2
+
