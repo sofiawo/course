@@ -123,3 +123,25 @@ means <- round(c(low10_m, low50_m, top10_m, top1_m), 0)
 
 income_summary <- data.frame(group, boundary, means)
 income_summary
+
+
+# 3.
+# 3.1
+a <- c(54, 38, 24, 56, 44)
+b <- c(1, 7, 2, 4, 2)
+c <- c(4, 4, 5, 3, 2)
+d <- c(7, 7, 3, 5, 6)
+e <- c(5, 4, 4, 4, 5)
+df <- data.frame(a, b, c, d, e)
+df
+
+# 3.2
+library(dplyr)
+means <- summarise_all(df, mean)
+means
+
+# 3.3
+m <- c(mean(df$a), mean(df$b), mean(df$c), mean(df$d), mean(df$e))
+m
+library(tidyverse)
+head(diamonds, 10)
