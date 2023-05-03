@@ -26,3 +26,6 @@ mean_x <- round(mean(x), 2)
 mean_x
 
 #2.2
+
+x <- seq(2,1000,2)
+x
